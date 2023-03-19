@@ -1,0 +1,238 @@
+/* 
+    Template Name: Call To Grid,
+    Athor Name:AR Sabbir,
+ */
+/* ------------>   Table Content    <--------- */
+
+/* Utility Start */
+
+:root {
+  --black: #010101;
+  --fs14: 14px;
+  --fs16: 16px;
+  --fs45: 45px;
+  --fs20: 20px;
+  --fs35: 35px;
+  --fs36: 36px;
+  --fs18: 18px;
+  --fs15: 15px;
+  --fs24: 24px;
+  --fs25: 25px;
+  --orange: #f35d14;
+  --white: #ffffff;
+  --yellow: #ffd74a;
+  --fw400: 400;
+  --fw: 500;
+  --fw600: 600;
+  --fw700: 700;
+  --inter: "Inter", sans-serif;
+  --michoroma: "Michroma", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: normal;
+  font-weight: 400;
+}
+.container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+img {
+  max-width: 100%;
+}
+
+/* Header Section start */
+#Header {
+  padding: 5px 0;
+  background-color: var(--black);
+}
+
+.head_col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+}
+.head_left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.head_left img {
+  width: 246px;
+  height: 43px;
+  object-fit: cover;
+}
+.head_left p {
+  font-size: var(--inter);
+  color: var(--orange);
+  font-size: var(--fs14);
+  font-weight: var(--fw600);
+}
+.header_right {
+  display: flex;
+  justify-content: space-around;
+  grid-gap: 0 20px;
+}
+
+.order p {
+  font-size: var(--fs14);
+  font-family: var(--inter);
+  font-weight: var(--fw600);
+  font-style: normal;
+  text-transform: capitalize;
+  color: var(--white);
+}
+.call p {
+  color: var(--white);
+  font-family: var(--inter);
+  font-size: var(--fs14);
+  font-style: normal;
+  text-transform: capitalize;
+  font-weight: var(--fw600);
+  padding-right: 20px;
+}
+.call p span {
+  font-weight: var(--fw700);
+  font-size: var(--fs16);
+  position: relative;
+}
+.call p span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 10px;
+  width: 112px;
+  border: 1px solid var(--orange);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  transform: rotate(-180deg);
+}
+
+.header_right ul li {
+  display: inline-block;
+}
+.header_right ul li a {
+  color: var(--white);
+  padding: 0 10px;
+}
+.icon .pad {
+  padding: 0;
+}
+.head_2_col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.nav-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.social ul li {
+  display: inline-block;
+}
+.nav-right {
+  text-align: start;
+  margin-left: 18px;
+  
+}
+.social{
+    margin-left: 75px;
+}
+.nav-right ul li {
+  display: inline-block;
+}
+
+#Navbar {
+  padding: 5px 0;
+}
+
+.nav-left img {
+  width: 246px;
+  height: 26px;
+  object-fit:cover;
+}
+/* .social{
+    margin-right: 50px;
+} */
+.social ul li{
+    padding: 0 8px;
+}
+
+.social ul li a {
+  background-color: var(--black);
+  padding: 6px 8px;
+  color: var(--white);
+  position: relative;
+  position: relative;
+
+
+  
+}
+
+
+
+.social ul li:hover a::after{
+    content: "";
+    display: block;
+    /* height: 32px;
+    width: 32px; */
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 17px solid var(--orange);
+    border-right: 17px solid transparent;
+    border-bottom: 17px solid transparent;
+    /* z-index: -1; */
+}
+/* .social ul li:hover a{
+    background-color: var(--black);
+    border-radius: 50%;
+    border:10px solid transparent !important;
+    border-right:10px solid black;
+    border-bottom:10px solid black;
+    padding: 0;
+} */
+.social ul li:hover a{
+    position: relative;
+    border: 10px solid black;
+}
+.social ul li:hover a i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.nav-right ul li{
+    display: inline-block;
+}
+.nav-right ul li a{
+    font-family: var(--inter);
+    font-style: normal;
+    font-weight: var(--fw600);
+    font-size: var(--fs14);
+    text-transform: uppercase;
+    color: var(--black);
+    padding: 9px 5px;
+}
+/* Header Section end */
