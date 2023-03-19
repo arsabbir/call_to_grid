@@ -139,7 +139,6 @@ img {
 .head_2_col {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
 }
 
 .nav-left {
@@ -153,10 +152,9 @@ img {
 .nav-right {
   text-align: start;
   margin-left: 18px;
-  
 }
-.social{
-    margin-left: 75px;
+.social {
+  margin-left: 75px;
 }
 .nav-right ul li {
   display: inline-block;
@@ -169,13 +167,13 @@ img {
 .nav-left img {
   width: 246px;
   height: 26px;
-  object-fit:cover;
+  object-fit: cover;
 }
 /* .social{
     margin-right: 50px;
 } */
-.social ul li{
-    padding: 0 8px;
+.social ul li {
+  padding: 0 8px;
 }
 
 .social ul li a {
@@ -183,56 +181,43 @@ img {
   padding: 6px 8px;
   color: var(--white);
   position: relative;
-  position: relative;
-
-
-  
 }
 
-
-
-.social ul li:hover a::after{
-    content: "";
-    display: block;
-    /* height: 32px;
+.social ul li:hover a::after {
+  content: "";
+  display: block;
+  /* height: 32px;
     width: 32px; */
-    background-color: transparent;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 17px solid var(--orange);
-    border-right: 17px solid transparent;
-    border-bottom: 17px solid transparent;
-    /* z-index: -1; */
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 17px solid var(--orange);
+  border-right: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  /* z-index: -1; */
 }
-/* .social ul li:hover a{
-    background-color: var(--black);
-    border-radius: 50%;
-    border:10px solid transparent !important;
-    border-right:10px solid black;
-    border-bottom:10px solid black;
-    padding: 0;
-} */
-.social ul li:hover a{
-    position: relative;
-    border: 10px solid black;
+
+.social ul li:hover a {
+  position: relative;
+  border-radius: 50%;
 }
-.social ul li:hover a i{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+.social ul li:hover a i {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
-.nav-right ul li{
-    display: inline-block;
+.nav-right ul li {
+  display: inline-block;
 }
-.nav-right ul li a{
-    font-family: var(--inter);
-    font-style: normal;
-    font-weight: var(--fw600);
-    font-size: var(--fs14);
-    text-transform: uppercase;
-    color: var(--black);
-    padding: 9px 5px;
+.nav-right ul li a {
+  font-family: var(--inter);
+  font-style: normal;
+  font-weight: var(--fw600);
+  font-size: var(--fs14);
+  text-transform: uppercase;
+  color: var(--black);
+  padding: 9px 5px;
 }
 /* Header Section end */
